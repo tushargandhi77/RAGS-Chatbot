@@ -1,14 +1,15 @@
 import os
 from dotenv import load_dotenv
 from langchain_huggingface import HuggingFaceEndpoint, HuggingFaceEmbeddings
-from langchain.document_loaders import PyPDFLoader
+# from langchain.document_loaders import PyPDFLoader
+from langchain_community.document_loaders import PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_astradb import AstraDBVectorStore
 
 # Load environment variables
 load_dotenv()
 HF_TOKEN = os.getenv("HUGGINGFACE_API_TOKEN")
-ASTRA_TOKEN = os.getenv("ASTRA_DB_APPLICATION_TOKEN")
+ASTRA_TOKEN = "AstraCS:iknYNcTDbZfiAtDTglfhUiBT:3738b6178b39ba6f985e79e0499248d3b18f86cfbe4112ad4c60071c47c47060"
 ASTRA_DB_API_ENDPOINT = os.getenv("ASTRA_DB_API_ENDPOINT")
 
 # Debug: Print the token and endpoint to verify
