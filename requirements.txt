@@ -1,7 +1,7 @@
 django==5.0.3
 langchain==0.3.21
 langchain-huggingface==0.1.2
-astrapy==1.0.0
+astrapy>=1.5.2,<2.0.0
 pypdf==4.1.0
 python-dotenv==1.0.1
 langchain-astradb==0.5.3
