@@ -6,4 +6,4 @@ pypdf==4.1.0
 python-dotenv==1.0.1
 langchain-astradb==0.5.3
 whitenoise==6.6.0
-
+gunicorn
